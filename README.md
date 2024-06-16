@@ -1,4 +1,4 @@
-<div align="center" style="display:flex; align-items: center;gap: 1rem;flex-direction: column;justify-content: flex-start padding:2rem 1rem 0;">
+<div align="center" style="display:flex; align-items: center;gap: 1rem;flex-direction: column;justify-content: flex-start; padding:2rem 1rem 0;">
 <div style="display:flex; align-items: center;gap: 0.5rem;">
 <a href="https://vuejs.org/" target="blank"><img src="https://router.vuejs.org/logo.svg" width="50" alt="Vue Logo" /></a>
 <a href="https://www.typescriptlang.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png?20210506173343" width="45" alt="Typescript Logo" /></a>
@@ -9,31 +9,32 @@
 
 <h1>Vue Element Plus Boilerplate</h1>
 
-[![license](https://img.shields.io/github/license/saymenghour/vue3-enterprise-boilerplate.svg)](LICENSE)
-[![repo-size](https://img.shields.io/github/repo-size/bangsite/vue-element-boilerplate.svg)](repo-size)
-[![last-commit](https://img.shields.io/github/last-commit/bangsite/vue-element-boilerplate.svg)](last-commit)
+[![license](https://img.shields.io/github/license/bangsite/vue-element-boilerplate.svg)](LICENSE)
+[![repo-size](https://img.shields.io/github/repo-size/bangsite/vue-element-boilerplate.svg)](#)
+[![last-commit](https://img.shields.io/github/last-commit/bangsite/vue-element-boilerplate.svg)](#)
 </div>
-A  boilerplate basic building with library Element Plus, and Typescript, Vite, Vue Router, Pinia, Axios, Tailwind CSS, Vue i18n for buildings efficient, faster, maintainable, and scalable for enterprise applications.
+
+A boilerplate for building efficient, fast, maintainable, and scalable enterprise applications using Element Plus,
+TypeScript, Vite, Vue Router, Pinia, Axios, Tailwind CSS, and Vue i18n.
 
 ## Table of Contents
 
-- [Features](#-features)
-- [Ecosystem](#-ecosystem)
-- [Structure](#️-structure)
-- [Getting Started](#-getting-started)
+- [Features](#features)
+- [Ecosystem](#ecosystem)
+- [Structure](#️structure)
+- [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-
-- [License](#-license)
+- [License](#license)
 
 ## Features
 
 - [ ] Authentication: Provides a secure login system for users.
 - [ ] Authorization: Implements role-based access control to manage user permissions.
-- [ ] Multiple Language: Supports localization and enables users to switch between different languages.
-- [ ] Theme (Light/Dark/System): Offers a choice of light, dark, or system-based theme for a personalized user
+- [x] Multiple Languages: Supports localization and enables users to switch between different languages.
+- [ ] Themes (Light/Dark/System): Offers a choice of light, dark, or system-based themes for a personalized user
   experience.
-- [ ] Table: Handle data table.
+- [ ] Table: Handles data tables.
 - [ ] Form Validation: Includes form validation functionality to ensure data integrity and improve user experience.
 - [ ] Error Handling: Handles and displays error messages in a user-friendly manner.
 - [ ] API Integration: Integrates with external APIs to fetch data and provide dynamic content.
@@ -69,37 +70,31 @@ A  boilerplate basic building with library Element Plus, and Typescript, Vite, V
 │   └── favicon.ico
 ├── src
 │   ├── assets
-│   │   ├── images
 │   │   └── scss
 │   ├── components
 │   │   ├── common
-│   │   ├── ui
 │   │   └── ...
 │   │   layouts
 │   │   ├── default.ts
 │   │   │── customs.ts
 │   │   └── ...
+│   ├── enums
 │   ├── constants
 │   ├── hooks
 │   ├── locales
 │   │   ├── en
+│   │   ├── vi
 │   │   └── ja
-│   ├── modules
-│   │   ├── authentication
-│   │   ├── current-user
-│   │   ├── dashboard
-│   │   └── ...
 │   ├── router
 │   │   ├── modules
-│   │   │   ├── dashboard.route.ts
-│   │   │   └── ...
 │   │   ├── guard
 │   │   ├── routes.ts
 │   │   ├── index.ts
 │   ├── services
-│   │   ├── config
 │   │   ├── modules
+│   │   ├── notification.service.ts
 │   │   └── api.service.ts
+│   ├── stores
 │   ├── types
 │   ├── utils
 │   ├── views
@@ -118,8 +113,8 @@ A  boilerplate basic building with library Element Plus, and Typescript, Vite, V
 ### Prerequisites
 
 - [Node Js](https://nodejs.org/en/) version `v20.10.0`.
-- [Visual Studio Code](https://code.visualstudio.com/download). Visual Studio Code is the free and open-sourced code
-  editor.
+- [Visual Studio Code](https://code.visualstudio.com/download): Visual Studio Code is the free and open-source code editor.
+
 
 - Recommended Plugin for VSCode
 
@@ -136,7 +131,7 @@ A  boilerplate basic building with library Element Plus, and Typescript, Vite, V
 1. Clone this repository to your computer:
 
    ```sh
-   https://github.com/saymenghour/vue-element-boilerplate.git
+   https://github.com/bangsite/vue-element-boilerplate.git
    cd vue-element-boilerplate
    ```
 
