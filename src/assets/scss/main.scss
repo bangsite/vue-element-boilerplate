@@ -1,0 +1,18 @@
+@import 'element-plus/dist/index.css';
+
+//@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Settings
+@import "./settings";
+
+// Layouts
+@import "./layouts";
+
+// Components
+@import "./components";
+
+// Pages
+@import "./pages";
+

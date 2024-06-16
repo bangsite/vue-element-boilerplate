@@ -1,0 +1,23 @@
+.upload__images {
+  .upload__input {
+    // Override Ant Deign
+  }
+}
+
+.upload__replace {
+  padding: 20px 40px;
+  margin: 0;
+
+  // Override Ant Deign
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+}
+
+.upload__variant {
+  .upload__input .ant-upload-picture-card-wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 8vh;
+  }
+}

@@ -1,0 +1,45 @@
+.side {
+    &__top {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding-left: 20px;
+        gap: 0.5rem;
+
+        &-logo {
+            display: flex;
+            width: 30px;
+            object-fit: cover;
+        }
+
+        &-title {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            @apply font-medium;
+        }
+    }
+
+    // override element ui
+    &.el-menu {
+        border-right: none;
+    }
+
+    .el-menu-item {
+        background-color: #f9f9f9;
+
+        &.is-active {
+            a {
+                color: var(--el-menu-active-color);
+            }
+        }
+
+        &:hover a {
+            color: var(--el-menu-active-color);
+        }
+
+        a {
+            color: var(--el-menu-text-color);
+        }
+    }
+}

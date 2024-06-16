@@ -1,0 +1,17 @@
+export default {
+  code: "Verification code",
+  codePlaceholder: "Please input verification code",
+  checkPassword: "Confirm password",
+  forgetPassword: "Forget password",
+  login: "Sign in",
+  hasUser: "Existing account? Go to login",
+  message: "Backstage management system",
+  otherLogin: "Sign in with",
+  remember: "Remember me",
+  register: "Register",
+  password: "Password",
+  passwordPlaceholder: "Please input password",
+  username: "Username",
+  usernamePlaceholder: "Please input username",
+  welcome: "Welcome to the system",
+};

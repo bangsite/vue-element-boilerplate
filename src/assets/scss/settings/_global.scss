@@ -1,0 +1,58 @@
+html, body {
+    @apply font-normal;
+    background-color: #fff;
+    color: #333;
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    transition: all 0.4s;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.title {
+    @apply font-extrabold text-xl;
+}
+
+.bg {
+    &-primary {
+        @apply bg-blue-500/10;
+    }
+
+    &-secondary {
+        @apply bg-purple-500/10;
+    }
+
+    &-info {
+        @apply bg-orange-500/10;
+    }
+
+    &-warning {
+        @apply bg-indigo-500/10;
+    }
+
+    &-danger {
+        @apply bg-red-500/10;
+    }
+
+    &-success {
+        @apply bg-green-500/10;
+    }
+}
+
+.text {
+    &-success {
+        @apply text-green-500;
+    }
+
+    &-danger {
+        @apply text-red-500;
+    }
+}

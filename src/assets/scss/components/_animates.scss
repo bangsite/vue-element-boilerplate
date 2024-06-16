@@ -1,0 +1,26 @@
+.blow-up-enter-active,
+.blow-up-leave-active {
+  transform: scale(1.01);
+  transition: transform 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.6s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.blow-up-enter-from,
+.blow-up-leave-to {
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+    opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: transform 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  transform: translateY(-100%);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(0);
+  //transition:  .2s  ease-in-out; opacity: 0;
+}

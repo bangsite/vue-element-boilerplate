@@ -1,0 +1,38 @@
+::-webkit-scrollbar {
+    background-color: #eee;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b5b5b5;
+}
+
+#app {
+    height: 100%;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.45);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: 99;
+}
+
+
+.table-best-seller.el-table thead th,
+.table-best-seller.el-table thead .el-table-fixed-column--right {
+    @apply bg-blue-50;
+}
+
+.table-best-seller.el-table td.el-table__cell:first-child div {
+    padding-left: 0;
+}

@@ -1,0 +1,50 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  &__wrap {
+    height: 100%;
+  }
+
+  &__exception {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    &-title {
+      //color: $cl-title;
+      font-size: 1.25rem;
+      margin-bottom: 0.4rem;
+    }
+
+    &-text {
+      //color: $cl-text;
+    }
+  }
+
+  &__desc {
+    svg {
+      width: 24px;
+      color: rgba(36, 168, 240, 0.6);
+    }
+  }
+
+  // Override Ant Deign
+  &.ant-card {
+    margin-bottom: 20px;
+  }
+
+  .ant-card-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+}
